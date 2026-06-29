@@ -116,24 +116,3 @@ Detrav 的探矿结果包 `detrav.net.ProspectingPacket` 原本会直接根据 `
 | `ProspectionNameHelper.java` | 为探矿仪结果解析 GregTech 矿石显示名 |
 | `asm/GTNHServerLocalizationCorePlugin.java` | coremod 入口 |
 | `asm/ProspectingPacketTransformer.java` | ASM 补丁实现 |
-
-## 构建
-
-本项目使用 GTNH Gradle Convention 构建，已在 Java 25 下测试。
-
-Windows:
-
-```powershell
-$env:JAVA_HOME='C:\Program Files\Java\jdk-25.0.3'
-.\gradlew.bat build
-```
-
-构建产物位于：
-
-```text
-build/libs/
-```
-
-## 本地参考文件
-
-仓库中的 `reference/` 目录用于本地存放服务端文件、汉化文件或测试参考文件，已经加入 `.gitignore`，不会提交到仓库。
